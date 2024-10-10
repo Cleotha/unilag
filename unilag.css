@@ -1,10 +1,9 @@
 
 body{
     background-image: url('senate.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-color: darkcyan;
+    background-size: contain;
 }
 .container{
     width: 100%;
@@ -15,6 +14,7 @@ body{
     background-color: #80091B;
     height: 40px;
     color: white;
+    padding-bottom: 1%;
 }
 .mail{
     padding-left: 10%;
@@ -191,6 +191,32 @@ nav a{
     width: 35%;
     height: 80px;
 }
+.vc h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.vc{
+    background-color: white;
+    padding-left: 5%;
+    padding-bottom: 10%;
+}
+.prof{
+    display: flex;
+    justify-content: space-around;
+}
+.vice{
+    width: 50%;
+}
+.image{
+    height: 300px;
+}
+.vice button{
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 35px;
+}
 @media(max-width: 900px) {
     .header{
         display: flex;
@@ -216,8 +242,8 @@ nav a{
     }
     .logo{
         margin-left: 0;
-        width: 57%;
-        padding-left: 40%;
+        width: 62%;
+        padding-left: 35%;
         height: 60px;
     }
     .menu{
@@ -233,7 +259,7 @@ nav a{
         margin-top: 10%;
     }
     .rank{
-        margin-top: 60%;
+        margin-top: 80%;
         flex-direction: column;
         height: 1050px;
     }
@@ -249,5 +275,15 @@ nav a{
     }
     .pic img{
         padding-bottom: 20px;
+    }
+    .prof{
+        flex-direction: column;
+    }
+    .vice{
+        width: 90%;
+    }
+    .vice button{
+        width: 50%;
+        margin-bottom: 10%;
     }
 }
